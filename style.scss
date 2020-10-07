@@ -1,16 +1,52 @@
-.body{
+
+// Couleurs
+$color-primary:#E5E8E8;
+
+body, p{
     width: 100%;
     height: auto;
-    margin: auto;
+    margin: 0;
 }
 
-.header{
-    background-color: #ffffff;
+// Logo
+.tete{
     width: 100%;
-    height: 50px;
+    height: 80px;
 }
 
-.header__logo{
-    width: 50%;
+.logo{
+
+    width: 100%;
+    height: 100%;
+
+        &__img{
+            width: 100%;
+            height: 40%;
+            padding-top: 25px;
+        }
+}
+
+// Encart de recherche
+.space__search{
+    width: 100%;
     height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar_search{
+    width: 99%;
+    height: 35px;
+    background-color: $color-primary;
+    border: none;
+    text-align: center;
+}
+
+.block_text_search{
+    width: 100%;
+    height: 60px;
+    background-color: adjust-hue($color: $color-primary, $degrees: -60)
 }
