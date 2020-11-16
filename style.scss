@@ -50,3 +50,25 @@ body, p{
     height: 60px;
     background-color: adjust-hue($color: $color-primary, $degrees: -60)
 }
+
+// Carte de restaurants 
+.block_card{
+
+    width: 90%;
+    height: 300px;
+}
+
+.block_photo{
+
+    width: 100%;
+    height: 100%;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+}
+
+.m_one{
+    background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
