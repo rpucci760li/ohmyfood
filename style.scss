@@ -2,7 +2,7 @@
 // Couleurs
 $color-primary:#E5E8E8;
 
-body{
+.body{
     width: 100%;
     height: auto;
     margin: 0;
@@ -74,9 +74,10 @@ body{
 }
 
 .photo{
-    width: 50%;
-    height: 50%;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
 }
 
