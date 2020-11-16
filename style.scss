@@ -2,7 +2,7 @@
 // Couleurs
 $color-primary:#E5E8E8;
 
-body, p{
+body{
     width: 100%;
     height: auto;
     margin: 0;
@@ -48,39 +48,50 @@ body, p{
 .block_text_search{
     width: 100%;
     height: 60px;
-    background-color: adjust-hue($color: $color-primary, $degrees: -60)
+    background-color: adjust-hue($color: $color-primary, $degrees: -60);
 }
 
 // Carte de restaurants 
-.block_card{
+.cards{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
 
+.block_card{
     width: 90%;
     height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .block_photo{
-
     width: 100%;
     height: 100%;
 }
 
 .photo{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    position: absolute;
 }
 
 .m_one{
-    background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-image: url('images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
 }
 
 .m_two{
-    background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-image: url('images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
 }
 
 .m_three{
-    background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-image: url('images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
 }
 
 .m_four{
-    background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-image: url('images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
 }

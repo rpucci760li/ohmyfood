@@ -1,4 +1,4 @@
-body, p {
+body {
   width: 100%;
   height: auto;
   margin: 0;
@@ -53,9 +53,32 @@ body, p {
   background-color: #e5e8e5;
 }
 
+.cards {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .block_card {
   width: 90%;
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .block_photo {
@@ -64,23 +87,25 @@ body, p {
 }
 
 .photo {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  position: absolute;
 }
 
 .m_one {
-  background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .m_two {
-  background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 .m_three {
-  background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .m_four {
-  background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 /*# sourceMappingURL=style.css.map */
