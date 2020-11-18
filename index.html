@@ -8,79 +8,89 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src="https://kit.fontawesome.com/8084e98a55.js" crossorigin="anonymous"></script>
 </head>
-<body class="body">
+<body id="body">
 
     <header class="tete">
         <div class="logo">
-            <img class="logo__img" src="images/logo/ohmyfood@2x.svg" alt="logo">
+            <h1>ohmyfood</h1>
+            <div class="lignelogo"></div>
         </div>
     </header>
 
     <div class="space__search">
-        <input class="bar_search" type="text" name="city" placeholder="Paris, Belleville">
-        <div class="block_text_search">
-            <p>Choisissez votre menu avant d'arrivée</p>
+        <div class="space_bar_search">
+            <i class="fas fa-map-marker-alt"></i>
+            <input class="bar_search" type="text" name="city" placeholder="Paris, Belleville">
         </div>
-        <div class="block_text_search">
-            <p >Découvrez les restaurants haut de gamme près de chez vous!</p>
+        <div class="one_t_s base_t_s">
+            <p>Votre menu préféré</p>
         </div>
-        <div class="block_text_search">
+        <div class="two_t_s base_t_s">
+            <p >Dans vos restaurants haut de gamme préférés</p>
+        </div>
+        <div class="three_t_s base_t_s">
             <input class="btn" type="button" value="Trouver un restaurant">    
         </div>    
     </div>
 
-    <div>
-        <h2>Comment procéder?</h2>
+    <div class="space_process">
+        <div class="space_title_process">
+            <div class="title_process">Comment procéder?</div>
+        </div>
        <!-- Une étape -->
-        <div>
-            <div>1</div>
-            <div>
-                <i class="fas fa-mobile-alt"></i>
+        <div class="block_step dis_flex">
+            <div class="number">
+                <div class="n_step">1</div>
+            </div>    
+            <div class="step dis_flex">
+                <i class="fas fa-mobile-alt ico_s"></i>
                 <p>Choisissez votre restaurant</p>
             </div>
         </div>
         <!-- Fin étape -->
         <!-- Une étape -->
-        <div>
-            <div>2</div>
-            <div>
-                <i class="fas fa-list"></i>
+        <div class="block_step dis_flex">
+            <div class="number">
+                <div class="n_step">2</div>
+            </div>
+            <div class="step dis_flex">
+                <i class="fas fa-list ico_s"></i>
                 <p>Créer votre menu</p>
             </div>
         </div>
         <!-- Fin étape -->
         <!-- Une étape -->
-        <div>
-            <div>3</div>
-            <div>
-                <i class="fas fa-store"></i>
+        <div class="block_step dis_flex">
+            <div class="number">
+                <div class="n_step">3</div>
+            </div>
+            <div class="step dis_flex">
+                <i class="fas fa-store ico_s"></i>
                 <p>Partez avec le sourire vers votre restaurant</p>
             </div>
         </div>
         <!-- Fin étape -->
     </div>
 
-    <div class="cards">
+    <div class="space_rest">
+        
         <h2>Restaurants</h2>
-        <!-- Une carte de résultat -->
-        <!-- Sur les 2 premières, mettre étiquette NEW -->
+
+        <div class="space_cards">
+            
             <a href="alafrancaise.html" class="block_card">
                 <div class="block_photo">
                     <div class="photo m_one"></div>
                     <div>New</div>
                 </div>
-                <div>
+                <div class="block_text">
                     <div>À la Française</div>
                     <div>Paris</div>
                     <i class="far fa-heart"></i>
-                </div>    
+                </div>            
             </a>
-        <!-- Fin de la carte de résultat -->
-
-        <!-- Une carte de résultat -->
-        <!-- Sur les 2 premières, mettre étiquette NEW -->
-        <a href="lanoteenchantee.html">
-            <div class="block_card">
+    
+            <a href="lanoteenchantee.html" class="block_card">
                 <div class="block_photo">
                     <div class="photo m_two"></div>
                     <div>New</div>
@@ -89,43 +99,45 @@
                     <div>La note enchantée</div>
                     <div>Paris</div>
                     <i class="far fa-heart"></i>
-                </div> 
-             </div>   
-        </a>
-         <!-- Fin de la carte de résultat -->
+                </div>
+            </a>
+        
+            <a href="lapalettedugout.html" class="block_card">
+                <div class="block_photo">
+                    <div class="photo m_three"></div>
+                </div>
+                <div class="block_text">
+                    <div>La pâlette du goût</div>
+                    <div>Paris</div>
+                    <i class="far fa-heart"></i>
+                </div>    
+            </a>
+            
+            <a href="ledelicedessens.html" class="block_card">
+                <div class="block_photo">
+                    <div class="photo m_four"></div>
+                </div>
+                <div class="block_text">
+                    <div>Le délice des sens</div>
+                    <div>Paris</div>
+                    <i class="far fa-heart"></i>
+                </div>    
+            </a>
 
-        <!-- Une carte de résultat -->
-        <!-- Sur les 2 premières, mettre étiquette NEW -->
-        <a href="lapalettedugout.html" class="block_card">
-            <div class="block_photo">
-                <div class="photo m_three"></div>
-            </div>
-            <div>
-                <div>La pâlette du goût</div>
-                <div>Paris</div>
-                <i class="far fa-heart"></i>
-            </div>    
-        </a>
-         <!-- Fin de la carte de résultat -->
-
-        <!-- Une carte de résultat -->
-        <!-- Sur les 2 premières, mettre étiquette NEW -->
-        <a href="ledelicedessens.html" class="block_card">
-            <div class="block_photo">
-                <div class="photo m_four"></div>
-            </div>
-            <div>
-                <div>Le délice des sens</div>
-                <div>Paris</div>
-                <i class="far fa-heart"></i>
-            </div>    
-        </a>
-         <!-- Fin de la carte de résultat -->
+        </div>
     </div>
-
     <footer>
-        <div class="logo">
-            <img class="logo__img" src="images/logo/ohmyfood@2x.svg" alt="logo">
+        <div class="footer">
+            <h1 class="logo_f">ohmyfood</h1>
+            <a href="error.html">
+                <div>Suggérer un restaurant</div>
+            </a>
+            <a href="error.html">
+                <div>Partenariat</div>
+            </a>
+            <a href="error.html">Mentions Légales</a>
+            <a href="error.html">Contact</a>
+
         </div>
     </footer>
 
