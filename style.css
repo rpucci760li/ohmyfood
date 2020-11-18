@@ -101,6 +101,16 @@
   font-display: swap;
 }
 
+h5 {
+  font-family: 'Roboto900';
+  font-size: 18px;
+}
+
+h6 {
+  font-family: 'Roboto100';
+  font-size: 14px;
+}
+
 *,
 *::after,
 *::before {
@@ -136,7 +146,7 @@
 }
 
 .footer {
-  background-color: #222121;
+  background-color: rgba(59, 59, 59, 0.548);
   color: #e6e9e9;
 }
 
@@ -155,7 +165,13 @@
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   font-family: 'Roboto900';
   font-size: small;
-  color: #e6e9e9;
+  color: white;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 .space__search {
@@ -231,6 +247,7 @@
 .space_process {
   width: 100%;
   height: auto;
+  margin-bottom: 50px;
 }
 
 .space_title_process {
@@ -257,10 +274,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .number {
@@ -292,10 +310,12 @@
   background-color: #9356DC;
   border-radius: 50px;
   position: relative;
+  color: white;
+  font-family: 'Roboto500Medium';
 }
 
 .step {
-  width: 80%;
+  width: 85%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -305,11 +325,17 @@
   background-color: #e6e9e9;
   border-radius: 20px;
   margin-left: -20px;
+  -webkit-box-shadow: 0.1px 0.1px 10px rgba(59, 59, 59, 0.548);
+          box-shadow: 0.1px 0.1px 10px rgba(59, 59, 59, 0.548);
 }
 
 .ico_s {
   padding-right: 10px;
-  padding-left: 20px;
+  padding-left: 30px;
+}
+
+.text_s {
+  font-family: 'RobotoBold';
 }
 
 .dis_flex {
@@ -321,6 +347,7 @@
 .space_rest {
   width: 100%;
   height: auto;
+  background-color: #e6e9e9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,6 +355,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.title_rest {
+  font-family: 'Roboto900';
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .space_cards {
@@ -343,8 +377,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .block_card {
@@ -357,6 +392,42 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.block_text {
+  width: 90%;
+  height: 60px;
+  position: absolute;
+  background-color: white;
+  margin-top: 240px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stick {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  margin-left: 70%;
 }
 
 .block_photo {
@@ -371,6 +442,9 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  border-radius: 30px;
+  -webkit-box-shadow: 0.1px 0.1px 10px rgba(59, 59, 59, 0.548);
+          box-shadow: 0.1px 0.1px 10px rgba(59, 59, 59, 0.548);
 }
 
 .m_one {
@@ -387,13 +461,6 @@
 
 .m_four {
   background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-
-.block_text {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  background-color: white;
 }
 
 .enc_photo {
