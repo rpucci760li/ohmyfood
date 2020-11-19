@@ -1,11 +1,29 @@
 .footer{
     background-color: $color_fourth;
-    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .logo_f{
-    font-size: 20px;  
-    font-family: 'shrikhandregular';
-
+    text-align: start;
+    color: white;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.link_footer{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    color: white;
+    display: flex;
+}
+
+.ico_f{
+    padding-right: 10px;
+}
+
+.text_f{
+    font-family: 'Roboto300Normal';
+}
