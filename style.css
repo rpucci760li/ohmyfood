@@ -201,6 +201,13 @@ h6 {
   color: white;
 }
 
+.btn:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9e6eda), to(#fa94dd));
+  background: linear-gradient(to left top, #9e6eda, #fa94dd);
+  -webkit-box-shadow: 0.1px 0.1px 10px #181717;
+          box-shadow: 0.1px 0.1px 10px #181717;
+}
+
 a {
   list-style: none;
   text-decoration: none;
@@ -244,7 +251,7 @@ a {
   border: none;
   text-align: center;
   font-family: 'Roboto500Medium';
-  background-color: #d8dadacc;
+  background-color: transparent;
 }
 
 .one_t_s {
@@ -442,6 +449,14 @@ a {
           justify-content: center;
   margin-top: 25px;
   margin-left: 70%;
+  border-radius: 3px;
+}
+
+.text_stick {
+  color: #1b6150;
+  font-family: 'RobotoBold';
+  font-size: 14px;
+  padding: 3px;
 }
 
 .block_photo {
@@ -526,8 +541,24 @@ a {
           align-items: center;
 }
 
-.fa-heart {
+.heart .heart_full {
   font-size: 30px;
+  cursor: pointer;
+}
+
+.heart_full {
+  position: absolute;
+  color: transparent;
+}
+
+.heart:hover {
+  color: transparent;
+}
+
+.heart_full:hover {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .f_return {

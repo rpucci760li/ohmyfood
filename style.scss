@@ -35,7 +35,7 @@ a{
     border: none;
     text-align: center;
     font-family: 'Roboto500Medium';
-    background-color: $color-secondary;
+    background-color: transparent;
 }
 
 .one_t_s{
@@ -178,6 +178,14 @@ a{
     justify-content: center;
     margin-top: 25px;
     margin-left: 70%;
+    border-radius: 3px;
+}
+
+.text_stick{
+    @include color-variant ($color: $color-three);
+    font-family: 'RobotoBold';
+    font-size: 14px;
+    padding: 3px;
 }
 
 .block_photo{
@@ -242,8 +250,24 @@ a{
     align-items: center;
 }
 
-.fa-heart{
+.heart .heart_full{
     font-size: 30px;
+    cursor: pointer;
+}
+
+.heart_full{
+    position: absolute;
+    color: transparent;
+}
+
+.heart:hover{
+    color: transparent;
+}
+
+.heart_full:hover{
+    background: -webkit-linear-gradient($color-one, $color-two);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 // Pages: Menu 

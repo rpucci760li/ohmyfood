@@ -8,3 +8,8 @@
     font-size: small;
     color: white;
 }
+
+.btn:hover{
+    background: linear-gradient(to left top, $color-lightone, $color-lighttwo);
+    @include box-shadow-dark;
+}

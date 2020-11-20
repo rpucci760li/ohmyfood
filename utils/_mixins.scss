@@ -1,3 +1,26 @@
 @mixin box-shadow {
     box-shadow: 0.1px 0.1px 10px $color-fourth;
 }
+
+@mixin box-shadow-dark {
+    box-shadow: 0.1px 0.1px 10px $color-darkfourth;
+}
+
+@mixin color-variant ($color: $color-primary) {
+    @if (lightness($color) <25%) {
+        $color: lighten($color, 10%)   
+    }@else{
+        $color: darken($color, 50%)
+    }
+    color: ($color);
+}
+
+
+
+
+
+
+
+
+
+
