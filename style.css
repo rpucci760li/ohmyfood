@@ -199,6 +199,8 @@ h6 {
   font-family: 'Roboto900';
   font-size: small;
   color: white;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
 }
 
 .btn:hover {
@@ -541,22 +543,30 @@ a {
           align-items: center;
 }
 
-.heart .heart_full {
+.heart {
   font-size: 30px;
   cursor: pointer;
-}
-
-.heart_full {
-  position: absolute;
-  color: transparent;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+  color: black;
 }
 
 .heart:hover {
   color: transparent;
 }
 
+.heart_full {
+  font-size: 30px;
+  position: absolute;
+  color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}
+
 .heart_full:hover {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -670,18 +680,79 @@ a {
 }
 
 .prix_plat {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.space_price {
+  width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.space_price:active {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.space_price:active + .space_check {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.space_check {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: green;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.fa-check-circle {
+  color: white;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .btn_comm {

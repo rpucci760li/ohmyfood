@@ -250,24 +250,27 @@ a{
     align-items: center;
 }
 
-.heart .heart_full{
+.heart{
     font-size: 30px;
     cursor: pointer;
+    transition: all 5s ease-in-out;
+    color: black;
+        &:hover{
+            color: transparent;
+        }
 }
 
 .heart_full{
+    font-size: 30px;
     position: absolute;
     color: transparent;
-}
-
-.heart:hover{
-    color: transparent;
-}
-
-.heart_full:hover{
-    background: -webkit-linear-gradient($color-one, $color-two);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: all 5s ease-in-out;
+        &:hover{
+            background: linear-gradient($color-one, $color-two);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 }
 
 // Pages: Menu 
@@ -351,12 +354,46 @@ a{
 }
 
 .prix_plat{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+}
+.space_price{
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    font-weight: bold;
+    align-items: center;
+    transform: translateX(50px);
+    transition: transform 500ms ease-in-out;
+    &:active{
+        transform: translateX(-10px);
+    }
+    &:active +.space_check{
+        transform: scale(1, 1);
+    }
+}
+
+.space_check{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(0, 1);
+    transition: transform 500ms ease-in-out;
+}
+
+.fa-check-circle{
+    color: $color-check-end;
+    transition: all 250ms ease-in-out;
 }
 
 .btn_comm{
