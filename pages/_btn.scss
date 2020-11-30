@@ -7,10 +7,14 @@
     font-family: 'Roboto900';
     font-size: small;
     color: white;
-    transition: all 1000ms;
+    transition: all 250ms ease-in-out;
 }
 
 .btn:hover{
     background: linear-gradient(to left top, $color-lightone, $color-lighttwo);
     @include box-shadow-dark;
+}
+
+.btn_comm{
+    height: 150px;
 }

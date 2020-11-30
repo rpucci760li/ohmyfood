@@ -189,6 +189,12 @@ h6 {
   font-size: 14px;
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 .btn {
   width: 50%;
   height: 50px;
@@ -199,8 +205,8 @@ h6 {
   font-family: 'Roboto900';
   font-size: small;
   color: white;
-  -webkit-transition: all 1000ms;
-  transition: all 1000ms;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .btn:hover {
@@ -210,10 +216,8 @@ h6 {
           box-shadow: 0.1px 0.1px 10px #181717;
 }
 
-a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
+.btn_comm {
+  height: 150px;
 }
 
 .space__search {
@@ -541,34 +545,39 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
+  transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
+}
+
+.h_rest:active > .heart {
+  opacity: 0;
+}
+
+.h_rest:active > .heart_full {
+  opacity: 1;
 }
 
 .heart {
   font-size: 30px;
   cursor: pointer;
-  -webkit-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out;
   color: black;
-}
-
-.heart:hover {
-  color: transparent;
+  position: relative;
+  opacity: 1;
+  -webkit-transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
+  transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
 }
 
 .heart_full {
   font-size: 30px;
   position: absolute;
-  color: transparent;
   cursor: pointer;
-  -webkit-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out;
-}
-
-.heart_full:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  -webkit-transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
+  transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
 }
 
 .f_return {
@@ -724,10 +733,10 @@ a {
           align-items: center;
   -webkit-transform: translateX(75%);
           transform: translateX(75%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.6, 0.06, 1, -0.2);
-  transition: -webkit-transform 250ms cubic-bezier(0.6, 0.06, 1, -0.2);
-  transition: transform 250ms cubic-bezier(0.6, 0.06, 1, -0.2);
-  transition: transform 250ms cubic-bezier(0.6, 0.06, 1, -0.2), -webkit-transform 250ms cubic-bezier(0.6, 0.06, 1, -0.2);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .space_check {
@@ -747,8 +756,8 @@ a {
   border-bottom-right-radius: 20px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transform-origin: right 50%;
-          transform-origin: right 50%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.99, 0.62, 0.55, 1);
   transition: -webkit-transform 500ms cubic-bezier(0.99, 0.62, 0.55, 1);
   transition: transform 500ms cubic-bezier(0.99, 0.62, 0.55, 1);
@@ -763,9 +772,5 @@ a {
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-}
-
-.btn_comm {
-  height: 150px;
 }
 /*# sourceMappingURL=style.css.map */

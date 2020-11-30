@@ -6,12 +6,6 @@
 @import "./base/fonts";
 @import "./pages/btn";
 
-a{
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
 // Encart de recherche
 .space__search{
     width: 100%;
@@ -248,29 +242,35 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    @include heart_transition;
+        &:active{
+            > .heart{
+                opacity: 0;
+            }
+                > .heart_full{
+                    opacity: 1;
+                }
+        }
 }
 
 .heart{
     font-size: 30px;
     cursor: pointer;
-    transition: all 5s ease-in-out;
     color: black;
-        &:hover{
-            color: transparent;
-        }
+    position: relative;
+    opacity: 1;
+    @include heart_transition;
 }
 
 .heart_full{
     font-size: 30px;
     position: absolute;
-    color: transparent;
     cursor: pointer;
-    transition: all 5s ease-in-out;
-        &:hover{
-            background: linear-gradient($color-one, $color-two);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    background: linear-gradient($color-one, $color-two);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    @include heart_transition;
 }
 
 // Pages: Menu 
@@ -300,7 +300,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   position: relative;
+    position: relative;
     margin-top: -50px;
     background-color: $color-primary;
     border-top-left-radius: 30px;
@@ -381,7 +381,7 @@ a{
     justify-content: center;
     align-items: center;
     transform: translateX(75%);
-    transition: transform 250ms cubic-bezier(.6,.06,1,-0.2);
+    transition: transform 500ms ease-in-out;
 }
 
 .space_check{
@@ -394,7 +394,7 @@ a{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     transform: scaleX(0);
-    transform-origin: right 50%;
+    transform-origin: right;
     transition: transform 500ms cubic-bezier(.99,.62,.55,1);
 }
 
@@ -404,6 +404,3 @@ a{
     transition: transform 500ms ease-in-out;
 }
 
-.btn_comm{
-    height: 150px;
-}

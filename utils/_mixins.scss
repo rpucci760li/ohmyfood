@@ -15,6 +15,10 @@
     color: ($color);
 }
 
+// Heart 
+@mixin heart_transition {
+    transition: all 250ms cubic-bezier(1,.01,.47,1);
+}
 
 
 
