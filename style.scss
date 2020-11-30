@@ -381,7 +381,7 @@ a{
     justify-content: center;
     align-items: center;
     transform: translateX(75%);
-    transition: transform 500ms cubic-bezier(.6,.06,1,-0.2);
+    transition: transform 250ms cubic-bezier(.6,.06,1,-0.2);
 }
 
 .space_check{
@@ -394,7 +394,7 @@ a{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     transform: scaleX(0);
-    transform-origin: 100% 50%;
+    transform-origin: right 50%;
     transition: transform 500ms cubic-bezier(.99,.62,.55,1);
 }
 
