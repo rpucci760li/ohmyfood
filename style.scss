@@ -341,6 +341,18 @@ a{
     border-radius: 20px;
     @include box-shadow;
     margin-bottom: 25px;
+    cursor: pointer;
+        &:active > .prix_plat{
+                & > .space_price{
+                transform: translateX(-10%);
+                }
+                    & > .space_check{
+                        transform: scaleX(1);
+                            & >.fa-check-circle{
+                                transform: rotate(360deg);
+                            }
+                        }
+            }
 }
 
 .plat{
@@ -360,22 +372,16 @@ a{
     justify-content: space-evenly;
     align-items: center;
     font-weight: bold;
-    transition: all 500ms ease-in-out;
 }
+
 .space_price{
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(50px);
-    transition: transform 500ms ease-in-out;
-    &:active{
-        transform: translateX(-10px);
-    }
-    &:active +.space_check{
-        transform: scale(1, 1);
-    }
+    transform: translateX(75%);
+    transition: transform 500ms cubic-bezier(.6,.06,1,-0.2);
 }
 
 .space_check{
@@ -384,16 +390,18 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: $color-three;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    transform: scale(0, 1);
-    transition: transform 500ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition: transform 500ms cubic-bezier(.99,.62,.55,1);
 }
 
 .fa-check-circle{
     color: $color-check-end;
-    transition: all 250ms ease-in-out;
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
 }
 
 .btn_comm{
