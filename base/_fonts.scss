@@ -124,13 +124,21 @@ h1{
 
 h5{
     font-family: 'Roboto900';
-    font-size: 18px;
+    font-size: 14px;
+    text-overflow: ellipsis;
 }
 
 h6{
     font-family: 'Roboto100';
-    font-size: 14px;
+    font-size: 12px;
 }
+
+.price{
+    font-family: 'Roboto900';
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
 
 a{
     list-style: none;

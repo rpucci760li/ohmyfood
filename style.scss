@@ -6,6 +6,33 @@
 @import "./base/fonts";
 @import "./pages/btn";
 
+.space_spinner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,0.9);
+    position: absolute;
+    display: grid;
+    place-items: center center;
+        &{
+            animation: space_spin 3000ms ease-in-out;
+                > .spinner{
+                    animation: spin 6 500ms ease-in-out;
+                }
+        }
+    
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 10px dashed $color-one;
+    border-left-color: $color-two;
+    border-bottom-color: transparent;
+    border-right-color: $color-lighttwo ;
+    border-radius: 100%;
+    
+}
+
 // Encart de recherche
 .space__search{
     width: 100%;
@@ -342,6 +369,10 @@
     @include box-shadow;
     margin-bottom: 25px;
     cursor: pointer;
+    transform-origin: top;
+        &{
+            animation: view_plate 1000ms ease-in-out;
+        }
         &:active > .prix_plat{
                 & > .space_price{
                 transform: translateX(-10%);
@@ -356,7 +387,7 @@
 }
 
 .plat{
-    width: 80%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
