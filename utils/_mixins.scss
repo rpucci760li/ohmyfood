@@ -17,7 +17,7 @@
 
 // Heart 
 @mixin heart_transition {
-    transition: all 250ms cubic-bezier(1,.01,.47,1);
+    transition: all 500ms cubic-bezier(1,.01,.47,1);
 }
 
 // Spinner 
@@ -32,19 +32,19 @@
 
 @keyframes space_spin{
     0%{
-        transform: scale(1);
+        transform: scaleY(1);
     }
     25% {
-        transform: scale(1);
+        transform: scaleY(1);
     }
     50% {
-        transform: scale(1);
+        transform: scaleY(1);
     }
     75% {
-        transform: scale(1);
+        transform: scaleY(1);
     }
     100% {
-        transform: scale(0);
+        transform: scaleY(0);
     }
 }
 
@@ -60,6 +60,19 @@
     }
 }
 
+@media screen and (min-width:769px) and (max-width:1024px) {
+   
+    @keyframes view_plate{
+        from{
+            opacity: 0;
+            transform: translateX(-200%);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+}
 
 
 

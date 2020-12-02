@@ -13,13 +13,14 @@
     position: absolute;
     display: grid;
     place-items: center center;
+    transform: scale(0);
+    transform-origin: top;
         &{
             animation: space_spin 3000ms ease-in-out;
                 > .spinner{
-                    animation: spin 6 500ms ease-in-out;
+                    animation: spin infinite 500ms ease-in-out;
                 }
         }
-    
 }
 
 .spinner{
@@ -30,7 +31,6 @@
     border-bottom-color: transparent;
     border-right-color: $color-lighttwo ;
     border-radius: 100%;
-    
 }
 
 // Encart de recherche
@@ -91,6 +91,7 @@
 }
 
 .space_title_process{
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: flex-start;
@@ -339,6 +340,7 @@
     height: auto;
     background-color: $color-primary;
     padding-left: 15px;
+    box-sizing: border-box;
 }
 
 .ligne{
@@ -435,3 +437,107 @@
     transition: transform 500ms ease-in-out;
 }
 
+// Media Queries 
+
+@media screen and (min-width:426px) and (max-width:768px) {
+  
+    // Process 
+
+    .block_step{
+        justify-content: space-evenly;
+    }
+
+    .n_step{
+        height: 50px;
+        width: 50px;
+    }
+
+    .step{
+        width: 70%;
+        margin-left: 0;
+    }
+
+    // Carte de restaurants 
+
+    .space_cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+    .block_card{
+        width: 40%;
+    }
+
+    .block_text{
+        width: 40%;
+    }
+
+    // Plats
+
+    .space_etiquette{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .etiquette_plat{
+        width: 45%;
+    }
+
+    .ligne{
+        width: 5%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+        // Process 
+
+        .space_process{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .block_step{
+            width: 30%;
+            justify-content: space-evenly;
+        }
+
+           // Carte de restaurants 
+
+        .space_cards{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+
+        .block_card{
+            width: 40%;
+        }
+
+        .block_text{
+            width: 40%;
+        }
+
+        // Plats
+
+        .space_etiquette{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .etiquette_plat{
+            width: 30%;
+        }
+
+        .ligne{
+            width: 5%;
+        }
+        
+
+}

@@ -27,3 +27,23 @@
 .text_f{
     font-family: 'Roboto300Normal';
 }
+
+@media screen and (min-width:426px) and (max-width:768px) {
+ 
+    .footer{
+        flex-direction: row;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: space-evenly;
+    }
+
+    .logo_f{
+        text-align: initial;
+        padding: 0;
+    }
+
+    .link_footer{
+        padding: 0;
+    }
+}
