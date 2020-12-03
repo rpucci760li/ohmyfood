@@ -772,8 +772,8 @@ a {
   cursor: pointer;
   color: black;
   position: relative;
-  -webkit-transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
-  transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
+  -webkit-transition: all 100ms cubic-bezier(1, 0.01, 0.47, 1);
+  transition: all 100ms cubic-bezier(1, 0.01, 0.47, 1);
 }
 
 .heart_full {
@@ -785,8 +785,8 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  -webkit-transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
-  transition: all 250ms cubic-bezier(1, 0.01, 0.47, 1);
+  -webkit-transition: all 100ms cubic-bezier(1, 0.01, 0.47, 1);
+  transition: all 100ms cubic-bezier(1, 0.01, 0.47, 1);
 }
 
 .f_return {
