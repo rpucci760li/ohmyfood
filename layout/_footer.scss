@@ -50,18 +50,21 @@
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1440px) {
  
     .footer{
-        flex-direction: row;
         align-items: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .logo_f{
-        text-align: initial;
+        width: 100%;
+        height: auto;
+        text-align: center;
         padding: 0;
     }
 
