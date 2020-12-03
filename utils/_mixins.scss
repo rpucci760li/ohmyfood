@@ -1,3 +1,12 @@
+// Display
+
+@mixin dfjccaic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Ombres
 @mixin box-shadow {
     box-shadow: 0.1px 0.1px 10px $color-fourth;
 }
@@ -13,11 +22,6 @@
         $color: darken($color, 50%)
     }
     color: ($color);
-}
-
-// Heart 
-@mixin heart_transition {
-    transition: all 500ms cubic-bezier(1,.01,.47,1);
 }
 
 // Spinner 
@@ -58,6 +62,10 @@
         opacity: 1;
         transform: translateY(0%);
     }
+}
+
+@mixin view_plate ($time:750ms) {
+    animation: view_plate $time ease-in-out;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {

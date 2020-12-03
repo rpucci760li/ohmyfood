@@ -13,7 +13,7 @@
     position: absolute;
     display: grid;
     place-items: center center;
-    transform: scale(0);
+    transform: scaleY(0);
     transform-origin: top;
         &{
             animation: space_spin 3000ms ease-in-out;
@@ -37,19 +37,15 @@
 .space__search{
     width: 100%;
     height: auto;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include dfjccaic;
 }
 
 .space_bar_search{
     width: 100%;
     height: 35px;
     background-color: $color-secondary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dfjccaic;
 }
 
 .bar_search{
@@ -77,9 +73,7 @@
     text-align: center;
     width: 100%;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dfjccaic;
 }
 
 // Espace process
@@ -115,17 +109,13 @@
 .number{
     width: 10%;
     height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include dfjccaic;
 }
 
 .n_step{
     height: 25px;
     width: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include dfjccaic;
     background-color: $color-one;
     border-radius: 50px;
     position: relative;
@@ -176,10 +166,8 @@
 .space_cards{
     width: 100%;
     height: auto;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include dfjccaic;
 }
 
 .block_card{
@@ -267,17 +255,14 @@
 .h_rest{
     height: 100%;
     width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include heart_transition;
-        &:active{
-            > .heart{
+    @include dfjccaic;
+        &{
+            &:active > .heart{
                 opacity: 0;
             }
-                > .heart_full{
-                    opacity: 1;
-                }
+            &:active > .heart_full{
+                opacity: 1;
+            }
         }
 }
 
@@ -286,8 +271,7 @@
     cursor: pointer;
     color: black;
     position: relative;
-    opacity: 1;
-    @include heart_transition;
+    transition: all 250ms cubic-bezier(1,.01,.47,1);
 }
 
 .heart_full{
@@ -298,7 +282,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    @include heart_transition;
+    transition: all 250ms cubic-bezier(1,.01,.47,1);
 }
 
 // Pages: Menu 
@@ -372,9 +356,6 @@
     margin-bottom: 25px;
     cursor: pointer;
     transform-origin: top;
-        &{
-            animation: view_plate 1000ms ease-in-out;
-        }
         &:active > .prix_plat{
                 & > .space_price{
                 transform: translateX(-10%);
@@ -388,6 +369,29 @@
             }
 }
 
+.ap1{
+    &{
+        @include view_plate;
+    }
+}
+
+.ap2{
+    &{
+        @include view_plate ($time:1000ms);
+    }
+}
+
+.ap3{
+    &{
+        @include view_plate ($time:1250ms);
+    }
+}
+
+.ap4{
+    &{
+        @include view_plate ($time:1500ms);
+    }
+}
 .plat{
     width: 60%;
     height: 100%;
@@ -410,9 +414,7 @@
 .space_price{
     width: 50%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dfjccaic;
     transform: translateX(75%);
     transition: transform 500ms ease-in-out;
 }
@@ -420,9 +422,7 @@
 .space_check{
     width: 50%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dfjccaic;
     background-color: $color-three;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -465,6 +465,11 @@
         justify-content: space-evenly;
     }
 
+    .stick{
+        margin-top: 25px;
+        margin-left: 30%;
+        border-radius: 3px;
+    }
 
     .block_card{
         width: 40%;
@@ -514,6 +519,11 @@
             justify-content: space-evenly;
         }
 
+        .stick{
+            margin-top: 25px;
+            margin-left: 30%;
+            border-radius: 3px;
+        }
 
         .block_card{
             width: 40%;
