@@ -50,9 +50,28 @@
     100% {
         transform: scaleY(0);
     }
+
 }
 
 // Apparition des plats 
+@keyframes modif_with{
+    0%{
+        width: 20%;
+    }
+    25% {
+        width: 40%;
+    }
+    50% {
+        width: 40%;
+    }
+    75% {
+        width: 40%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
 @keyframes view_plate{
     from{
         opacity: 0;

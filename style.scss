@@ -157,7 +157,6 @@
 }
 
 .title_rest{
-    font-family: 'Roboto900';
     padding-left: 15px;
     padding-top: 50px;
     padding-bottom: 25px;
@@ -357,8 +356,9 @@
     cursor: pointer;
     transform-origin: top;
         &:active > .prix_plat{
+                animation: modif_with 1000ms linear;
                 & > .space_price{
-                transform: translateX(-10%);
+                    transform: translateX(-10%);
                 }
                     & > .space_check{
                         transform: scaleX(1);
@@ -393,7 +393,7 @@
     }
 }
 .plat{
-    width: 60%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -402,13 +402,18 @@
     padding-left: 15px;
 }
 
+.titre_plat{
+    text-overflow: ellipsis ellipsis;
+    white-space: pre;
+    overflow: hidden;
+}
+
 .prix_plat{
-    width: 40%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-weight: bold;
 }
 
 .space_price{

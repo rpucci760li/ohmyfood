@@ -117,27 +117,70 @@
     font-display: swap;
 }
 
-h1{
+// Header
+
+.logo{
     font-family: 'shrikhandregular';
     text-align: center;
+    font-size: 40px;
 }
 
-h5{
+// Accueil: Espace des restaurants
+
+.title_rest{
     font-family: 'Roboto900';
-    font-size: 14px;
-    text-overflow: ellipsis;
+    font-size: 24px;
 }
 
-h6{
+// Accueil: Espace des restaurants: Carte 
+
+.name_rest{
+    font-family: 'Roboto900';
+    font-size: 18px;
+}
+
+.local_rest{
     font-family: 'Roboto100';
-    font-size: 12px;
+    font-size: 16px;
+}
+
+// Footer
+
+.logo_f{
+    font-family: 'shrikhandregular';
+    font-size: 20px;
+}
+
+// Page Restaurant
+
+.name_rest_p{
+    font-family: 'shrikhandregular';
+    text-align: center;
+    font-size: 30px;
+}
+
+.type_plat_name{
+    font-family: 'Roboto300Normal';
+    font-size: 18px;
+}
+
+.tpf1{
+    font-family: 'Roboto900';
+    font-size: 16px;
+}
+
+.tpf2{
+    font-family: 'Roboto100';
+    font-size: 14px;
 }
 
 .price{
     font-family: 'Roboto900';
     font-size: 14px;
-    text-overflow: ellipsis;
+    font-weight: bold;
 }
+
+
 
 
 a{
